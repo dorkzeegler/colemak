@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Area with Colemak Layout, Save, and Copy Button</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        flex: 1;
+        font-size: 16px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+      }
+
+      .message {
+        font-size: 14px;
+        color: green;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="colemakTextArea" rows="10" cols="50"></textarea>
+    <div>
+      <button id="saveButton">Save as Text File</button>
+      <button id="copyButton">Copy</button>
+      <button id="copyAndClearButton">Copy and Clear</button>
+    </div>
+    <div id="message" class="message"></div>
+    <script nonce="your-unique-nonce-value" src="../popup.js"></script>
+  </body>
+</html>
